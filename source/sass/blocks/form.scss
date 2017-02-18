@@ -1,0 +1,110 @@
+.form {
+	width: 316px;
+	margin: 0 auto;
+	margin-top: 56px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	@media #{$intro-desktop} {
+		width: 316px;
+		margin-left: 6px;
+	}
+	&__label {
+		display: inline-block;
+		width: calc(100% / 3 - 1px);
+		margin-left: -3px;
+		padding: 12px 0;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		color: $white;
+		background: rgba(255, 255, 255, 0.2);
+		font-size: 14px;
+		line-height: 1;
+		cursor: pointer;
+		text-align: center;
+		&:first-of-type {
+			margin-left: 0;
+			border-radius: 20px 0 0 20px;
+		}
+		&:last-of-type {
+			border-radius: 0 20px 20px 0;
+		}
+	}
+	&__input {
+		display: inline-block;
+		width: 100%;
+		padding: 10px 0;
+		margin-bottom: 12px;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 1;
+		background: rgba(255, 255, 255, 0.2);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		border-radius: 20px;
+		color: $white;
+		text-align: center;
+		&:active,
+		&:focus {
+			border: 1px solid rgba(255, 255, 255, 0.5);
+			outline: none;
+		}
+		&_radio {
+			display: none;
+			&:checked {
+				& + .form__label {
+					border: 1px solid $green;
+					color: $green;
+				}
+			}
+
+		}
+	}
+	&__currency {
+		margin-top: 10px;
+		margin-bottom: 25px;
+	}
+	&__text {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 10px;
+		text-align: center;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1;
+		color: $white;
+	}
+	&__btn {
+		display: inline-block;
+		width: 100%;
+		padding: 12px 0;
+		background: $green__dark;
+		border: none;
+		border-radius: 20px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1;
+		color: $white;
+		text-align: center;
+		letter-spacing: 1px;
+		cursor: pointer;
+		&:active,
+		&:hover {
+			outline: none;
+			background: rgba(68, 159, 66, 0.5);
+		}
+	}
+	&__hint,
+	&__link {
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 1.3;
+		color: rgba(255, 255, 255, 0.5);
+		text-align: center;
+	}
+	&__hint {
+		display: inline-block;
+		margin-top: 14px;
+		width: 100%;
+	}
+}
+
+@include placeholder() {
+	color: $white;
+}

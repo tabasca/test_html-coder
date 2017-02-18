@@ -1,0 +1,129 @@
+.howto {
+	position: relative;
+	padding-top: 86px;
+	padding-bottom: 146px;
+	background: url('../img/bg_howto.jpg') no-repeat 50% 51.5%;
+	background-size: cover;
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: #364b59;
+		opacity: 0.9;
+	}
+	&__title {
+		display: inline-block;
+		width: 100%;
+		margin: 0;
+		font-weight: 300;
+		font-size: 44px;
+		line-height: 1;
+		text-align: center;
+	}
+	&__list {
+		padding: 0;
+		width: 276px;
+		margin: 0 auto;
+		margin-top: 62px;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		@media #{$howto-desktop} {
+			width: 100%;
+			padding: 0 22px;
+			flex-direction: row;
+			flex-wrap: nowrap;
+		}
+	}
+	&__item {
+		position: relative;
+		display: flex;
+		width: 100%;
+		margin-bottom: 30px;
+		text-align: center;
+		justify-content: space-between;
+		align-items: center;
+		@media #{$howto-desktop} {
+			display: inline-block;
+			width: 17%;
+			margin-bottom: 0;
+			vertical-align: top;
+		}
+		& svg {
+			display: inline-block;
+			width: 75px;
+			height: auto;
+			fill: $white;
+		}
+		&:before {
+			position: absolute;
+			content: '';
+			top: 30px;
+			left: -21%;
+			right: 0;
+			margin: 0 auto;
+			width: 14px;
+			height: 14px;
+			border: 2px solid $white;
+			border-radius: 50%;
+			background: transparent;
+			z-index: 10;
+
+			@media #{$howto-desktop} {
+				top: 95px;
+				left: 0;
+			}
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 62%;
+			left: 108px;
+			right: 0;
+			width: 2px;
+			height: 118%;
+			background: #c8d9e5;
+			@media #{$howto-desktop} {
+				top: 103px;
+				left: 54%;
+				right: 0;
+				width: 92%;
+				height: 2px;
+			}
+		}
+		&:first-of-type {
+			margin-left: 0;
+			& svg {
+				position: relative;
+				top: -5px;
+			}
+		}
+		&:last-of-type {
+			& svg {
+				width: 65px;
+				padding-top: 10px;
+			}
+			&:after {
+				display: none;
+			}
+		}
+	}
+	&__descr {
+		position: relative;
+		display: inline-block;
+		width: 50%;
+		margin-top: 0;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.3;
+		vertical-align: top;
+		@media #{$howto-desktop} {
+			width: 100%;
+			margin-top: 55px;
+		}
+	}
+}

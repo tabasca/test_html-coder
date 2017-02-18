@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	position: relative;
+	width: 100%;
+	height: auto;
+	min-width: 320px;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	background: $white;
+	color: $white;
+}
+
+a {
+	&:focus {
+		outline: none;
+	}
+}
+
+.wrapper {
+	position: relative;
+	min-width: 320px;
+	max-width: 1280px;
+	margin: 0 auto;
+	z-index: 10;
+}

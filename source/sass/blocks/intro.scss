@@ -1,0 +1,65 @@
+.intro {
+	padding-top: 160px;
+	padding-bottom: 54px;
+	background: url('../img/bg_intro.jpg') no-repeat 50%;
+	background-size: cover;
+	&__wrap {
+		width: 100%;
+		text-align: center;
+		@media #{$intro-desktop} {
+			margin-left: 21px;
+			width: 570px;
+			text-align: left;
+		}
+	}
+	&__title {
+		display: inline-block;
+		margin: 0;
+		font-size: 10vmin;
+		line-height: 1.2;
+		font-family: 'Roboto', Arial, sans-serif;
+		font-weight: 400;
+		letter-spacing: -0.8px;
+		@media #{$intro-desktop} {
+			font-size: 60px;
+		}
+		&_sub {
+			font-size: 8.7vmin;
+			line-height: 1;
+			font-weight: 300;
+			letter-spacing: 0;
+			@media #{$intro-desktop} {
+				font-size: 52px;
+			}
+		}
+	}
+	&__stats {
+		width: 100%;
+		margin-top: 96px;
+		text-align: center;
+	}
+	&__numbers,
+	&__text {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+	&__numbers {
+		margin-bottom: 5px;
+		font-size: 6.85vmin;
+		line-height: 1;
+		font-weight: 700;
+		@media #{$intro-desktop} {
+			font-size: 41px;
+		}
+	}
+	&__text {
+		font-size: 3.65vmin;
+		line-height: 1;
+		font-weight: 400;
+		color: $green__dark;
+		@media #{$intro-desktop} {
+			font-size: 22px;
+		}
+	}
+}

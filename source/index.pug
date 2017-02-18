@@ -1,0 +1,59 @@
+extends layout/template
+
+block vars
+
+block head
+	link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400" rel="stylesheet")
+
+block content
+
+	main.main-section
+		section.intro
+			.wrapper
+				.intro__wrap
+					h1.intro__title Бинарные опционы:
+						span.intro__title.intro__title_sub Кратчайший путь в&nbsp;мир <br> трейдинга
+					form.intro__form.form
+						input.form__input(type='text', placeholder='Ваш e-mail', name='email')
+						input.form__input(type='text', placeholder='Придумайте пароль', name='pswd')
+						.form__currency
+							span.form__text Выберите вашу валюту
+
+							input#currency_rubles.form__input.form__input_radio(type='radio', name='currency', value='rub')
+							label.form__label(for='currency_rubles') Рубль
+
+							input#currency_usd.form__input.form__input_radio(type='radio', name='currency', value='usd')
+							label.form__label(for='currency_usd') Доллар
+
+							input#currency_euro.form__input.form__input_radio(type='radio', name='currency', value='euro')
+							label.form__label(for='currency_euro') Евро
+						button.form__btn(type='submit') Зарегистрироваться
+						span.form__hint Нажатием на кнопку «Зарегистрироваться» вы подтверждаете,  что вам 18 лет, и вы согласны c
+							=' '
+							a.form__link(href='#', target='_blank') соглашением об оказании услуг
+				.intro__stats
+					span.intro__numbers 380 588 $
+					span.intro__text Выплачено трейдерам сегодня
+		section.howto
+			.wrapper
+				.howto__wrap
+					h2.howto__title Начать просто
+					ul.howto__list
+						li.howto__item
+							include layout/svg/watch.svg
+							span.howto__descr Зарегистрируйтесь за&nbsp;30&nbsp;секунд
+						li.howto__item
+							include layout/svg/presentation.svg
+							span.howto__descr Пройдите краткий интерактивный курс начинающего трейдера
+						li.howto__item
+							include layout/svg/line-chart.svg
+							span.howto__descr Выберите одну из готовых&nbsp;стратегий
+						li.howto__item
+							include layout/svg/dumbbell.svg
+							span.howto__descr Потренируйтесь на&nbsp;демосчёте
+						li.howto__item
+							include layout/svg/credit-card.svg
+							span.howto__descr Пополните счёт удобным&nbsp;способом
+						li.howto__item
+							include layout/svg/percent.svg
+							span.howto__descr Торгуйте с&nbsp;высокой доходностью

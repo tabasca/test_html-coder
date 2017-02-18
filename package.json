@@ -1,0 +1,44 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "private": true,
+  "description": "description",
+  "author": "Екатерина Иванюта",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tabasca/sample.git"
+  },
+  "homepage": "https://github.com/tabasca/sample",
+  "dependencies": {
+    "autoprefixer": "6.1.x",
+    "eclint": "1.1.x",
+    "gulp-plumber": "1.0.x",
+    "gulp-postcss": "6.0.x",
+    "normalize.css": "^3.0.3",
+    "browser-sync": "^2.10.1",
+    "fs-extra": "^0.26.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-dest-clean": "^0.5.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-watch": "^4.3.5",
+    "imagemin-pngquant": "^4.2.0"
+  },
+  "scripts": {
+    "test": "gulp lint",
+    "start": "gulp dev"
+  },
+  "engines": {
+    "node": "^5.0.0"
+  },
+  "devDependencies": {
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-pug": "^3.2.0"
+  }
+}

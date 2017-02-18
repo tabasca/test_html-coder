@@ -1,0 +1,21 @@
+//colors
+$white: #ffffff;
+$green: #29da26;
+$green__dark: #449f42;
+
+//mq
+$intro-mobile: "(min-width: 320px) and (max-width: 599px)";
+$intro-desktop: "(min-width: 600px)";
+
+$howto-mobile: "(min-width: 320px) and (max-width: 1199px)";
+$howto-desktop: "(min-width: 1200px)";
+
+//fonts
+@font-face {
+	font-family: 'pobeda';
+	src: url('fonts/pobeda-bold.eot') format('woff2'),
+	url('fonts/pobeda-bold.woff') format('woff'),
+	url('fonts/pobeda-bold.svg#Pobeda-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
