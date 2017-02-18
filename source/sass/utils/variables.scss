@@ -13,9 +13,9 @@ $howto-desktop: "(min-width: 1200px)";
 //fonts
 @font-face {
 	font-family: 'pobeda';
-	src: url('fonts/pobeda-bold.eot') format('woff2'),
-	url('fonts/pobeda-bold.woff') format('woff'),
-	url('fonts/pobeda-bold.svg#Pobeda-Bold') format('svg');
+	src: url('../fonts/pobeda-bold.eot') format('woff2'),
+	url('../fonts/pobeda-bold.woff') format('woff'),
+	url('../fonts/pobeda-bold.svg#Pobeda-Bold') format('svg');
 	font-weight: 700;
 	font-style: normal;
 }
